@@ -404,3 +404,150 @@ divPar7oneObjThired.forEach((item) => {
 
 /*footer*/
 
+var divColumn = document.querySelector(".column")
+
+var aElementFooter = document.createElement("a")
+aElementFooter.setAttribute("href" , "https://tapsi.ir")
+var imgfooter = document.createElement("img")
+imgfooter.setAttribute("src" , "https://tapsi.ir/images/tapsi-logo-white.svg" )
+aElementFooter.appendChild(imgfooter)
+divColumn.appendChild(aElementFooter)
+
+var pFooter = document.createElement("p")
+pFooter.innerHTML = "اپلیکیشن درخواست خودرو و پیک"
+divColumn.appendChild(pFooter)
+
+var pFootertwo = document.createElement("p")
+pFootertwo.innerHTML = "تمام حقوق مادی و معنوی این وبسایت متعلق به امین است"
+pFootertwo.style.color = "#acacac"
+divColumn.appendChild(pFootertwo)
+
+
+var divFooter = document.querySelector(".footer-div")
+
+var divFooterObjfirst = [
+    {aElementFooter : "وبلاگ تپسی" , href : " https://blog.tapsi.ir/"},
+    {aElementFooter : "فرصت شغلی" , href : " https://careers.tapsi.ir/"},
+    {aElementFooter : "تماس با ما" , href : " https://tapsi.ir/contact"},
+    {aElementFooter : "لوگو و هویت سازمانی" , href : " https://tapsi.ir/brand"},
+    {aElementFooter : "معرفی راننده به تپسی" , href : " https://tapsi.ir/affiliate"},
+] 
+divfirst = document.createElement("div")
+divfirst.setAttribute("class" , "footer-a")
+divFooter.appendChild(divfirst)
+
+h3first = document.createElement("h3")
+h3first.innerHTML = "تپسی"
+divfirst.appendChild(h3first)
+
+divFooterObjfirst.forEach((item) => {
+
+    aElementfirst = document.createElement("a")
+    aElementfirst.setAttribute("href" , item.href)
+    aElementfirst.innerHTML = item.aElementFooter
+    divfirst.appendChild(aElementfirst)
+})
+
+var divFooterObjtwo = [
+    {aElementFooter : "دانلود اپ مسافر" , href : " https://tapsi.ir/passengers/dl"},
+    {aElementFooter : "نسخه وب تپسی" , href : " https://app.tapsi.cab"},
+    {aElementFooter : "پرسش‌های متداول مسافران" , href : " https://tapsi.ir/passengers/faq"},
+    {aElementFooter : "شرایط و قوانین مسافران" , href : " https://tapsi.ir/terms/passengers"},
+    {aElementFooter : "باشگاه مشتریان" , href : " https://tapsi.ir/spaceship/"},
+] 
+divtwo = document.createElement("div")
+divtwo.setAttribute("class" , "footer-a")
+divFooter.appendChild(divtwo)
+
+h3two = document.createElement("h3")
+h3two.innerHTML = "مسافران"
+divtwo.appendChild(h3two)
+
+divFooterObjtwo.forEach((item) => {
+
+    aElementtwo = document.createElement("a")
+    aElementtwo.setAttribute("href" , item.href)
+    aElementtwo.innerHTML = item.aElementFooter
+    divtwo.appendChild(aElementtwo)
+})
+
+var divFooterObjthree = [
+    {aElementFooter : "دانلود اپ سفیر" , href : " https://tapsi.ir/drivers/dl"},
+    {aElementFooter : "ثبت نام راننده تاکسی اینترنتی" , href : " https://join.tapsi.cab/login"},
+    {aElementFooter : "پرسش‌های متداول سفیران" , href : " https://tapsi.ir/drivers/faq"},
+    {aElementFooter : "شرایط و قوانین سفیران" , href : " https://tapsi.ir/terms/drivers"},
+    {aElementFooter : " باشگاه سفیران" , href : " https://tapsi.ir/pro"},
+] 
+
+divthree = document.createElement("div")
+divthree.setAttribute("class" , "footer-a")
+divFooter.appendChild(divthree)
+
+h3three = document.createElement("h3")
+h3three.innerHTML = "رانندگان"
+divthree.appendChild(h3three)
+
+divFooterObjthree.forEach((item) => {
+
+    aElementthree = document.createElement("a")
+    aElementthree.setAttribute("href" , item.href)
+    aElementthree.innerHTML = item.aElementFooter
+    divthree.appendChild(aElementthree)
+})
+
+var divFooterObjfour = [
+    {aElementFooter : "پنل سازمانی تپسی" , href : " https://co.tapsi.ir/login"},
+    {aElementFooter : "خرید کد اعتبار و تخفیف" , href : " https://vouchers.tapsi.ir/login"},
+    {aElementFooter : "دریافت API" , href : " https://tapsi.ir/corporate"},
+] 
+
+divfour = document.createElement("div")
+divfour.setAttribute("class" , "footer-a")
+divFooter.appendChild(divfour)
+
+h3four = document.createElement("h3")
+h3four.innerHTML = "کسب و کارها"
+divfour.appendChild(h3four)
+
+divFooterObjfour.forEach((item) => {
+    aElementfour = document.createElement("a")
+    aElementfour.setAttribute("href" , item.href)
+    aElementfour.innerHTML = item.aElementFooter
+    divfour.appendChild(aElementfour)
+})
+
+/*icon*/
+
+var lastdiv = document.querySelector(".footer-div2")
+
+var h3icon = document.createElement("h3")
+h3icon.style.margin = "15px 0 "
+h3icon.innerHTML = "تپسی در شبکه‌های اجتماعی"
+lastdiv.appendChild(h3icon)
+
+var lastIconObj = [
+    {src: "https://tapsi.ir/images/contact/facebook.svg"},
+    {src: "https://tapsi.ir/./images/contact/instagram.svg"},
+    {src: "https://tapsi.ir/./images/contact/twitter.svg"},
+    {src: "https://tapsi.ir/./images/contact/linkedin.svg"},
+    {src: "https://tapsi.ir/./images/contact/telegram.svg"},
+]
+
+var divicon = document.createElement("div")
+lastdiv.appendChild(divicon)
+
+lastIconObj.forEach((item) => {
+    aElementicon = document.createElement("a")
+    aElementicon.setAttribute("href" , "#")
+    divicon.appendChild(aElementicon)
+
+    ImgElementicon = document.createElement("img")
+    ImgElementicon.setAttribute("src" , item.src)
+    ImgElementicon.style.height = "20px"
+    aElementicon.appendChild(ImgElementicon)
+})
+/*
+var ImgElementicon = document.createElement("img")
+ImgElementicon.setAttribute("src" , item.src)
+ImgElementicon.style.height = "20px"
+aElementicon.innhtm*/
